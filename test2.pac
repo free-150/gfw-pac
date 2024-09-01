@@ -5,8 +5,8 @@ function FindProxyForURL(url, host) {
     // 请求包含指定社交媒体或通讯应用的网址将通过代理访问
     if (shExpMatch(url,"*twitter*")  ||
         shExpMatch(url,"*facebook*") ||
-        shExpMatch(url,"*fb*") ||
-        shExpMatch(url,"*messenger*")) {
+       // shExpMatch(url,"*messenger*") ||
+        shExpMatch(url,"*fb*")) {
             return "PROXY 10.1.0.2:30171; DIRECT";
     }
     
