@@ -1,8 +1,11 @@
 function FindProxyForURL(url, host) {
-  // 大小写统一
+// 注：修改为用户自己的代理地址和端口搜索“return "PROXY“”
+
+// 大小写统一
     url  = url.toLowerCase();
     host = host.toLowerCase();
-  // 如果是本地地址，不使用代理
+
+// 如果是本地地址，不使用代理
   if (isPlainHostName(host) ||
       shExpMatch(host, "localhost.*") ||
       isInNet(dnsResolve(host), "10.0.0.0", "255.0.0.0") ||
@@ -12,8 +15,7 @@ function FindProxyForURL(url, host) {
         return "DIRECT";
   }
 
-
-  // 代理地址
+// 代理地址
   if (shExpMatch(url, "http://85.17.73.31/*") ||
       shExpMatch(url, "*.casinobellini.com*") ||
       shExpMatch(url, "*cloudflare.com*") ||
