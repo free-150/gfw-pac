@@ -13,11 +13,14 @@ function FindProxyForURL(url, host) {
   //  }
 
   // 代理地址
-    if (shExpMatch(url,"*fb*") ||
-        shExpMatch(url,"*youtube*") ||
-        shExpMatch(url,"*twitter*") ||
+    if (shExpMatch(url,"*twitter*") ||
         shExpMatch(url,"*facebook*") ||
-        shExpMatch(url,"*google*")) {
+        shExpMatch(url,"*fb*") ||
+        shExpMatch(url,"*messenger*") ||
+        shExpMatch(url,"*youtube*") ||
+        shExpMatch(url,"*google*") ||
+        shExpMatch(url,"*wikipedia*") ||
+        shExpMatch(url,"*blogspot*")) {
             return "PROXY 10.1.0.2:30171; DIRECT";
     }
 
