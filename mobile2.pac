@@ -5,8 +5,10 @@ function FindProxyForURL(url, host) {
       isInNet(dnsResolve(host), "10.0.0.0", "255.0.0.0") ||
       isInNet(dnsResolve(host), "172.16.0.0", "255.240.0.0") ||
       isInNet(dnsResolve(host), "192.168.0.0", "255.255.0.0") ||
-      isInNet(dnsResolve(host), "127.0.0.0", "255.255.255.0"))
-    return "DIRECT";
+      isInNet(dnsResolve(host), "127.0.0.0", "255.255.255.0")) {
+        return "DIRECT";
+  }
+
 
   // 代理地址
   if (shExpMatch(url, "http://85.17.73.31/*") ||
@@ -3905,8 +3907,9 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "*q=triangle*") ||
       shExpMatch(url, "*q%3DTriangle*") ||
       shExpMatch(url, "*ultrareach*") ||
-      shExpMatch(url, "*ultrasurf*"))
-    return "PROXY 10.1.0.2:30171";
+      shExpMatch(url, "*ultrasurf*")) {
+        return "PROXY 10.1.0.2:30171";
+  }
 
   // 直链地址
   if (shExpMatch(url, "http://www.google.cn/maps*") ||
@@ -3917,8 +3920,10 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "https://cdn.ampproject.org*") ||
       shExpMatch(url, "http://nrch.culture.tw/*") ||
       shExpMatch(url, "http://translate.google.cn*") ||
-      shExpMatch(url, "http://ime.baidu.jp*"))
-    return "DIRECT";
+      shExpMatch(url, "http://ime.baidu.jp*")) {
+        return "DIRECT";
+  }
+
 
   // 其他情况，按顺序尝试多个代理，直到成功
   return "DIRECT; PROXY 10.1.0.2:30171; SOCKS5 10.1.0.2:30170";
