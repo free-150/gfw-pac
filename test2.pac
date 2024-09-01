@@ -32,12 +32,12 @@ function FindProxyForURL(url, host) {
             return "PROXY 10.1.0.2:30171; DIRECT";
     }
   // 直链地址
-    if (shExpMatch(url,"http://www.google.cn/maps*") ||
-        shExpMatch(url,"http://blog.ontrac.com*") ||
-        shExpMatch(url,"http://store.sprite.org*") ||
-        shExpMatch(url,"http://ime.baidu.jp*")) {
-            return "DIRECT";
-    }
+//    if (shExpMatch(url,"http://www.google.cn/maps*") ||
+  //      shExpMatch(url,"http://blog.ontrac.com*") ||
+    //    shExpMatch(url,"http://store.sprite.org*") ||
+      //  shExpMatch(url,"http://ime.baidu.jp*")) {
+        //    return "DIRECT";
+ //   }
 
 
   // 其他情况，按顺序尝试多个代理，直到成功
