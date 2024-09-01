@@ -327,6 +327,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "*.google.ws*") ||
       shExpMatch(url, "*.googlevideo.com*") ||
       shExpMatch(url, "http://sipml5.org/*") ||
+      shExpMatch(url, "*.youtube*") ||
       shExpMatch(url, "*.youtube.com*") ||
       shExpMatch(url, "*static01.nyt.com*") ||
       shExpMatch(url, "*nytchina.com*") ||
@@ -369,6 +370,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "https://tw.answers.yahoo.com*") ||
       shExpMatch(url, "*tw.yahoo.com*") ||
       shExpMatch(url, "*tw.myblog.yahoo.com*") ||
+      shExpMatch(url, "*.yahoo.co.jp*") ||
       shExpMatch(url, "*pulse.yahoo.com*") ||
       shExpMatch(url, "*upcoming.yahoo.com*") ||
       shExpMatch(url, "*video.yahoo.com*") ||
