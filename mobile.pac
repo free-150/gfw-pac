@@ -10,12 +10,12 @@ function FindProxyForURL(url, host) {
 
   // 如果是特定网站，使用指定的代理
   if (shExpMatch(url, BLACKPAT))
-    return "PROXY 192.168.3.175:2334";
+    return "PROXY 10.1.0.2:30171";
   if (shExpMatch(url, WHITEPAT))
     return "DIRECT";
 
   // 其他情况，按顺序尝试多个代理，直到成功
-  return "DIRECT; PROXY 192.168.3.175:2334; SOCKS5 192.168.3.175:2334";
+  return "DIRECT; PROXY 10.1.0.2:30171; SOCKS5 10.1.0.2:30170";
 }
 
 var BLACKPAT = [
