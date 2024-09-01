@@ -12,7 +12,7 @@ function FindProxyForURL(url, host) {
     
     // 请求包含YouTube或Google的网址将通过代理访问
     if (shExpMatch(url,"*youtube*") ||
-        shExpMatch(url,"**.nytimes.com**") ||
+        shExpMatch(url,"*.nytimes.com*") ||
         shExpMatch(url,"*google*")) {
             return "PROXY 10.1.0.2:30171; DIRECT";
     }
