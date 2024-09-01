@@ -16,6 +16,24 @@ function FindProxyForURL(url, host) {
   // 代理地址
   if (shExpMatch(url, "http://85.17.73.31/*") ||
       shExpMatch(url, "*.casinobellini.com*") ||
+      shExpMatch(url, "*cloudflare.com*") ||
+      shExpMatch(url, "*.docker.com*") ||
+      shExpMatch(url, "*fbcdn.net*") ||
+      shExpMatch(url, "*ggpht.com*") ||
+      shExpMatch(url, "*godaddy.com*") ||
+      shExpMatch(url, "*googleapis.com*") ||
+      shExpMatch(url, "*googleusercontent.com*") ||
+      shExpMatch(url, "*gstatic.com*") ||
+      shExpMatch(url, "*jsdelivr.com*") ||
+      shExpMatch(url, "*live.com*") ||
+      shExpMatch(url, "*segment.io*") ||
+      shExpMatch(url, "*stackoverflow.com*") ||
+      shExpMatch(url, "*unpkg.com*") ||
+      shExpMatch(url, "*wikipedia.org*") ||
+   // youtube 图片依赖
+      shExpMatch(url, "*ytimg.com*") ||
+   // youtube app依赖
+      shExpMatch(url, "*fb.com*") ||
       shExpMatch(url, "http://img.dlsite.jp/*") ||
       shExpMatch(url, "*share.dmhy.org*") ||
       shExpMatch(url, "http://www.dmm.com/netgame*") ||
@@ -271,6 +289,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "*.freeddns.org*") ||
       shExpMatch(url, "*cdninstagram.com*") ||
       shExpMatch(url, "*.facebook.com*") ||
+      shExpMatch(url, "*.facebook.net*") ||
       shExpMatch(url, "*.instagram.com*") ||
       shExpMatch(url, "*.ftchinese.com*") ||
       shExpMatch(url, "*.appspot.com*") ||
