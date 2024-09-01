@@ -3,12 +3,12 @@ function FindProxyForURL(url, host) {
     host = host.toLowerCase();
 
     // 请求包含指定社交媒体或通讯应用的网址将通过代理访问
-    if (shExpMatch(url,"*twitter*")  ||
-        shExpMatch(url,"*facebook*") ||
+   // if (shExpMatch(url,"*twitter*")  ||
+    //    shExpMatch(url,"*facebook*") ||
        // shExpMatch(url,"*messenger*") ||
-        shExpMatch(url,"*fb*")) {
-            return "PROXY 10.1.0.2:30171; DIRECT";
-    }
+     //   shExpMatch(url,"*fb*")) {
+     //       return "PROXY 10.1.0.2:30171; DIRECT";
+   // }
     
     // 请求包含YouTube或Google的网址将通过代理访问
     if (shExpMatch(url,"*youtube*") ||
