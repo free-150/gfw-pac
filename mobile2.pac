@@ -1,4 +1,7 @@
 function FindProxyForURL(url, host) {
+  // 大小写统一
+    url  = url.toLowerCase();
+    host = host.toLowerCase();
   // 如果是本地地址，不使用代理
   if (isPlainHostName(host) ||
       shExpMatch(host, "localhost.*") ||
