@@ -3908,7 +3908,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "*q%3DTriangle*") ||
       shExpMatch(url, "*ultrareach*") ||
       shExpMatch(url, "*ultrasurf*")) {
-        return "PROXY 10.1.0.2:30171";
+        return "PROXY 10.1.0.2:30171; DIRECT";
   }
 
   // 直链地址
