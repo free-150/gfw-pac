@@ -13,8 +13,11 @@ function FindProxyForURL(url, host) {
   //  }
 
   // 代理地址
-    if (shExpMatch(url,"*youtube*") ||
-        shExpMatch(url,"*ultrasurf*")) {
+    if (shExpMatch(url,"*messenger*") ||
+        shExpMatch(url,"*youtube*") ||
+        shExpMatch(url,"*twitter*") ||
+        shExpMatch(url,"*facebook*") ||
+        shExpMatch(url,"*google*")) {
             return "PROXY 10.1.0.2:30171; DIRECT";
     }
 
