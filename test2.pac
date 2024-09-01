@@ -13,7 +13,7 @@ function FindProxyForURL(url, host) {
   //  }
 
   // 代理地址
-    if (shExpMatch(url,"*messenger*") ||
+    if (shExpMatch(url,"*fb*") ||
         shExpMatch(url,"*youtube*") ||
         shExpMatch(url,"*twitter*") ||
         shExpMatch(url,"*facebook*") ||
