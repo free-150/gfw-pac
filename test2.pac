@@ -4,11 +4,11 @@ function FindProxyForURL(url, host) {
     host = host.toLowerCase();
   // 如果是本地地址，不使用代理
     if (isPlainHostName(host) ||
-        shExpMatch(host, "localhost.*") ||
-        isInNet(dnsResolve(host),"10.0.0.0", "255.0.0.0") ||
+     //   shExpMatch(host, "localhost.*") ||
+     //   isInNet(dnsResolve(host),"10.0.0.0", "255.0.0.0") ||
         isInNet(dnsResolve(host),"172.16.0.0", "255.240.0.0") ||
         isInNet(dnsResolve(host),"192.168.0.0", "255.255.0.0") ||
-        isInNet(dnsResolve(host),"127.0.0.0", "255.255.255.0")) {
+     //   isInNet(dnsResolve(host),"127.0.0.0", "255.255.255.0")) {
             return "DIRECT";
     }
 
