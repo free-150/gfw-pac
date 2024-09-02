@@ -106,6 +106,7 @@ var domainsUsingProxy = {
   "youtube.com": 1,
   "tver.jp": 1,
   "abema.tv": 1,
+  "sakurazaka46.com": 1,
   "ytimg.com": 1
 };
 
