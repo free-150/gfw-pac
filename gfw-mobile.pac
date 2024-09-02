@@ -32,6 +32,9 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "*stackoverflow.com*") ||
       shExpMatch(url, "*unpkg.com*") ||
       shExpMatch(url, "*wikipedia.org*") ||
+      shExpMatch(url, "*sakurazaka46.com*") ||
+      shExpMatch(url, "*abema.tv*") ||
+      shExpMatch(url, "*tver.jp*") ||
    // youtube 图片依赖
       shExpMatch(url, "*ytimg.com*") ||
    // youtube app依赖
