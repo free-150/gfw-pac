@@ -104,6 +104,8 @@ var domainsUsingProxy = {
   "unpkg.com": 1,
   "wikipedia.org": 1,
   "youtube.com": 1,
+  "tver.jp": 1,
+  "abema.tv": 1,
   "ytimg.com": 1
 };
 
