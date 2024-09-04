@@ -71,14 +71,14 @@ var directDomains = {
   "www.gstatic.com": 1,
   "xiaomi.com": 1,
   "ykimg.com": 1,
+  "bing.cn": 1,
+  "bing.com": 1,
+  "bing.net": 1,
   "youku.com": 1,
   "zijieapi.com": 1
 };
 
 var domainsUsingProxy = {
-  "bing.cn": 1,
-  "bing.com": 1,
-  "bing.net": 1,
   "cloudflare.com": 1,
   "docker.com": 1,
   "facebook.com": 1,
