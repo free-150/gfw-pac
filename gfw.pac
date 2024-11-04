@@ -28,6 +28,8 @@ var directDomains = {
   "biliapi.net": 1,
   "bilibili.com": 1,
   "bilivideo.cn": 1,
+  "douban.com": 1,
+  "api.douban.com": 1,
   "byteimg.com": 1,
   "bytescm.com": 1,
   "cdn-go.cn": 1,
