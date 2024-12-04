@@ -1,4 +1,4 @@
-var proxy = "PROXY 10.1.0.2:30171";
+var proxy = "SOCKS5 10.1.0.2:30170"
 
 var direct = 'DIRECT';
 
