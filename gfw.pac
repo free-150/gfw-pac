@@ -77,6 +77,9 @@ var directDomains = {
   "bing.com": 1,
   "bing.net": 1,
   "youku.com": 1,
+  "youku.com": 1,
+  "ghp.ci": 1,
+  "mirror.ghproxy.com": 1,
   "zijieapi.com": 1
 };
 
