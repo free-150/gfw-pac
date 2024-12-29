@@ -3935,7 +3935,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(url, "*q%3DTriangle*") ||
       shExpMatch(url, "*ultrareach*") ||
       shExpMatch(url, "*ultrasurf*")) {
-        return "PROXY 10.1.0.2:30171; DIRECT";
+        return "SOCKS5 10.1.0.2:30170; DIRECT";
   }
 
   // 直链地址
@@ -3953,5 +3953,5 @@ function FindProxyForURL(url, host) {
 
 
   // 其他情况，按顺序尝试多个代理，直到成功
-  return "DIRECT; PROXY 10.1.0.2:30171; SOCKS5 10.1.0.2:30170";
+  return "DIRECT; SOCKS5 10.1.0.2:30170; PROXY 10.1.0.2:30171";
 }
